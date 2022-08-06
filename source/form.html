@@ -66,33 +66,33 @@
 
       <section class="feedback">
         <h2 class="visually-hidden">Форма отзывы</h2>
-        <form class="feedback__form" action="http://echo.htmlacademy.ru/" method="get">
+        <form class="feedback__form" action="http://echo.htmlacademy.ru/" method="get" id="feedback">
 
           <fieldset class="feedback__present present">
-            <legend class="present__title">Представьтесь:</h3>
+            <legend class="present__title">Представьтесь:</legend>
             <label class="present_item">
-              <p class="present__name">Имя<sup>*</sup>:</p>
+              <span class="present__name">Имя<sup>*</sup>:</span>
               <input class="present__field" type="text" name="username" placeholder="Пётр" required>
             </label>
             <label class="present_item">
-              <p class="present__name">Фамилия<sup>*</sup>:</p>
+              <span class="present__name">Фамилия<sup>*</sup>:</span>
               <input class="present__field" type="text" name="surname" placeholder="Пустота" required>
             </label>
             <label class="present_item">
-              <p class="present__name">Отчество:</p>
+              <span class="present__name">Отчество:</span>
               <input class="present__field" type="text" name="patronymic" placeholder="Викторович">
             </label>
           </fieldset>
 
           <fieldset class="feedback__contacts contacts">
-            <legend class="contacts__title">Ваше общее впечатление:</h3>
+            <legend class="contacts__title">Ваше общее впечатление:</legend>
             <label class="contacts_item">
-              <p class="contacts__name">Контактный телефон<sup>*</sup>:</p>
+              <span class="contacts__name">Контактный телефон<sup>*</sup>:</span>
               <input class="contacts__field" type="tel" name="phone" placeholder="Введите телефон" pattern="" required>
               <img class="contacts__icon" src="#" alt="Ввести номер телефона">
             </label>
             <label class="contacts_item">
-              <p class="contacts__name">Электронная почта<sup>*</sup>:</p>
+              <span class="contacts__name">Электронная почта<sup>*</sup>:</span>
               <input class="contacts__field" type="email" name="surname" placeholder="Введите e-mail" required>
               <img class="contacts__icon" src="#" alt="Ввести e-mail">
             </label>
@@ -159,10 +159,12 @@
             </ul>
           </fieldset>
 
-          <fieldset class="feedback__emotions emotions">
-            <legend class="emotions__title">Опишите свои эмоции:</legend>
-            <input class="emotions__field" type="textarea" name="textarea" rows="5" placeholder="Опишите подробно все свои восторги">
-          </fieldset>
+          <div class="feedback__emotions emotions">
+            <h3 class="emotions__title">Опишите свои эмоции:</h3>
+            <textarea class="emotions__description" name="description" form="feedback" rows="5">
+              Опишите подробно все свои восторги
+            </textarea>
+          </div>
 
           <fieldset class="feedback__send send">
             <input class="send-button" type="button" value="Отправить отзыв">
@@ -175,7 +177,7 @@
     </main>
 
     <footer class="main-footer">
-      <div clas="main-footer__wrapper">
+      <div class="main-footer__wrapper">
         <div class="main-footer__contacts">
           <b class="main-footer__hashtag">#VISITSEDONA</b>
         </div>
@@ -210,6 +212,7 @@
             <svg class="copyright__icon" aria-hidden="true" focusable="false">
             </svg>
             <span class="visually-hidden">HTML Academy</span>
+          </a>
         </div>
       </div>
 
