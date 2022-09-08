@@ -1,6 +1,9 @@
+@use "variables.scss";
+//Стили главной страницы
 @use "blocks/page.scss";
 @use "blocks/main-header.scss";
 @use "blocks/main-nav.scss";
+@use "blocks/left-list.scss";
 @use "blocks/welcome.scss";
 @use "blocks/description.scss";
 @use "blocks/advantages.scss";
@@ -21,3 +24,6 @@
 //Стили каталога
 @use "blocks/catalog.scss";
 @use "blocks/production.scss";
+//Дополнительно
+@use "blocks/button.scss";
+@use "blocks/visually-hidden.scss";

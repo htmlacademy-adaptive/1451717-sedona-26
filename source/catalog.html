@@ -2,23 +2,23 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="main-header">
 
-      <a class="main-header__logo">
-        <img class="main-header__logo-image"
-          src="/images/logo.svg" width="185" height="96" alt="Логотип города Седона">
-      </a>
-
       <nav class="main-nav">
+        <a class="main-nav__logo">
+          <img class="main-nav__logo-image"
+            src="img/logo.svg" width="185" height="96" alt="Логотип города Седона">
+        </a>
         <button class="main-nav__toggle button" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
+          <ul class="main-nav__list left-list">
             <li class="site-list__item site-list__item--active">
               <a href="index.html">
                 Главная
@@ -29,12 +29,14 @@
                 Фото и видео
               </a>
             </li>
-            <li class="site-list__item">
+          </ul>
+          <ul class="main-nav__list user-list">
+            <li class="user-list__item">
               <a href="form.html">
                 Форма отзыва
               </a>
             </li>
-            <li class="site-list__item">
+            <li class="user-list__item">
               <a href="https://htmlacademy.ru">
                 HTML Academy
               </a>
@@ -49,7 +51,7 @@
 
       <section class="welcome welcome--other-pages">
         <h1 class="visually-hidden">Городок Седона</h1>
-        <img class="welcome__logo welcome__logo--other-pages" src="#" alt="Добро пожаловать в Седону.">
+        <img class="welcome__logo welcome__logo--other-pages" src="img/welcome-other.svg" alt="Добро пожаловать в Седону.">
       </section>
 
       <section class="description">

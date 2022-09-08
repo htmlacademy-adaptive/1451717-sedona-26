@@ -1,4 +1,4 @@
-.main-nav {
+.main-nav__wrapper {
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
@@ -6,8 +6,25 @@
   background-color: hsl(203, 47%, 66%);
 }
 
+.main-nav__logo-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .main-nav__list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: center;
   margin: 0;
   padding: 0;
   list-style-type: none;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    display: flex;
+    width: 768px;
+  }
 }
