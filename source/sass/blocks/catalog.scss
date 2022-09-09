@@ -1,5 +1,9 @@
+@use "variables.scss";
+
 .catalog__wrapper {
   background-color: #ffffff;
+  width: 280px;
+  margin: 0 auto;
 }
 
 .catalog__list {
@@ -10,4 +14,53 @@
 
 .catalog__like-quantity {
   font-weight: 700;
+}
+
+@media (min-width: variables.$tablet-width) {
+  .catalog__wrapper {
+    width: 648px;
+  }
+
+  .catalog__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .catalog__item {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 324px;
+    height: 347px;
+  }
+
+  .catalog__item--big {
+    width: 648px;
+    height: 480px;
+  }
+
+  .catalog__wrapper-up {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .catalog__wrapper-right {
+    display: flex;
+  }
+}
+
+@media (min-width: variables.$desktop-width) {
+  .catalog__wrapper {
+    width: 1200px;
+  }
+
+  .catalog__item {
+    width: 400px;
+    height: 267px;
+  }
+
+  .catalog__item--big {
+    width: 1200px;
+    height: 400px;
+  }
 }

@@ -1,3 +1,5 @@
+@use "variables.scss";
+
 .advantages__wrapper {
   background-color: #ffffff;
 }
@@ -64,4 +66,27 @@
   flex-wrap: wrap;
   flex-direction: column;
   text-align: center;
+}
+
+@media (min-width: variables.$tablet-width) {
+  .advantages {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .advantages__wrapper {
+    display: flex;
+  }
+
+  .advantages__list {
+    display: flex;
+    flex-direction: row;
+    max-width: 768px;
+  }
+
+  .advantages__item {
+    display: flex;
+    flex-direction: column;
+    max-width: 256px;
+  }
 }

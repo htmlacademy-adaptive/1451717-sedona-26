@@ -51,7 +51,8 @@
 
       <section class="welcome welcome--other-pages">
         <h1 class="visually-hidden">Городок Седона</h1>
-        <img class="welcome__logo welcome__logo--other-pages" src="img/welcome-other.svg" alt="Добро пожаловать в Седону.">
+        <img class="welcome__logo welcome__logo--other-pages"
+          src="img/welcome-other.svg" width="229" height="39" alt="Добро пожаловать в Седону.">
       </section>
 
       <section class="description">
@@ -70,38 +71,40 @@
         <h2 class="visually-hidden">Форма отзыва</h2>
         <form class="feedback__form" action="http://echo.htmlacademy.ru/" method="get" id="feedback">
 
-          <fieldset class="feedback__present contact">
-            <legend class="contact__title heading">Представьтесь:</legend>
-            <label class="contact__item field">
-              <span class="field__name">Имя<sup>*</sup>:</span>
-              <input class="field__input" type="text" name="username" placeholder="Пётр" required>
-            </label>
-            <label class="contact__item field">
-              <span class="field__name">Фамилия<sup>*</sup>:</span>
-              <input class="field__input" type="text" name="surname" placeholder="Пустота" required>
-            </label>
-            <label class="contact__item field">
-              <span class="field__name">Отчество:</span>
-              <input class="field__input" type="text" name="patronymic" placeholder="Викторович">
-            </label>
-          </fieldset>
+          <div class="feedback__wrapper">
+            <fieldset class="feedback__present contact">
+              <legend class="contact__title heading">Представьтесь:</legend>
+              <label class="contact__item field">
+                <span class="field__name">Имя<sup>*</sup>:</span>
+                <input class="field__input" type="text" name="username" placeholder="Пётр" required>
+              </label>
+              <label class="contact__item field">
+                <span class="field__name">Фамилия<sup>*</sup>:</span>
+                <input class="field__input" type="text" name="surname" placeholder="Пустота" required>
+              </label>
+              <label class="contact__item field">
+                <span class="field__name">Отчество:</span>
+                <input class="field__input" type="text" name="patronymic" placeholder="Викторович">
+              </label>
+            </fieldset>
 
-          <fieldset class="feedback__contacts contact">
-            <legend class="contact__title heading">Ваше общее впечатление:</legend>
-            <label class="contact__item field">
-              <span class="field__name">Контактный телефон<sup>*</sup>:</span>
-              <input class="field__input field__input--transparent" type="tel" name="phone" placeholder="Введите телефон" pattern="" required>
-              <img class="field__icon" src="#" alt="Ввести номер телефона">
-            </label>
-            <label class="contact__item field">
-              <span class="field__name">Электронная почта<sup>*</sup>:</span>
-              <input class="field__input field__input--transparent" type="email" name="surname" placeholder="Введите e-mail" required>
-              <img class="field__icon" src="#" alt="Ввести e-mail">
-            </label>
-          </fieldset>
+            <fieldset class="feedback__contacts contact">
+              <legend class="contact__title heading">Контактная информация:</legend>
+              <label class="contact__item field">
+                <span class="field__name">Контактный телефон<sup>*</sup>:</span>
+                <input class="field__input field__input--transparent" type="tel" name="phone" placeholder="Введите телефон" pattern="" required>
+                <img class="field__icon" src="#" alt="Ввести номер телефона">
+              </label>
+              <label class="contact__item field">
+                <span class="field__name">Электронная почта<sup>*</sup>:</span>
+                <input class="field__input field__input--transparent" type="email" name="surname" placeholder="Введите e-mail" required>
+                <img class="field__icon" src="#" alt="Ввести e-mail">
+              </label>
+            </fieldset>
+          </div>
 
           <fieldset class="feedback__impressions impressions">
-            <legend class="impressions__tittle heading">Тип Жилья:</legend>
+            <legend class="impressions__tittle heading">Ваше общее впечатление:</legend>
             <ul class="impressions__list">
               <li class="impressions__item">
                 <label>

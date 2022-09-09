@@ -1,4 +1,5 @@
-@use "variables.scss";
+@use "blocks/button.scss";
+@use "blocks/heading.scss";
 //Стили главной страницы
 @use "blocks/page.scss";
 @use "blocks/main-header.scss";
@@ -15,7 +16,6 @@
 //Стили формы
 @use "blocks/feedback.scss";
 @use "blocks/contact.scss";
-@use "blocks/heading.scss";
 @use "blocks/field.scss";
 @use "blocks/impressions.scss";
 @use "blocks/visited.scss";
@@ -25,5 +25,4 @@
 @use "blocks/catalog.scss";
 @use "blocks/production.scss";
 //Дополнительно
-@use "blocks/button.scss";
 @use "blocks/visually-hidden.scss";

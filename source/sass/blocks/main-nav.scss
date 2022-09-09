@@ -1,3 +1,5 @@
+@use "variables.scss";
+
 .main-nav__wrapper {
   font-size: 18px;
   line-height: 26px;
@@ -8,8 +10,7 @@
 
 .main-nav__logo-image {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 }
 
 .main-nav__list {
@@ -22,9 +23,62 @@
   list-style-type: none;
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: variables.$tablet-width) {
   .main-nav {
+    width: 768px;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__logo-image {
+    position: absolute;
+    display: none;
+  }
+
+  .main-nav__wrapper {
     display: flex;
     width: 768px;
+    justify-content: space-between;
+    background-color: #ffffff;
+  }
+
+  .main-nav__list {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+  }
+
+  .site-list__item {
+    width: 153px;
+    height: 56px;
+  }
+
+  .user-list__item {
+    width: 153px;
+    height: 56px;
   }
 }
+
+@media (min-width: variables.$desktop-width) {
+  .main-nav {
+    width: 1200px;
+  }
+
+  .main-nav__wrapper {
+    width: 1200px;
+  }
+
+  .site-list__item {
+    width: 240px;
+  }
+
+  .user-list__item {
+    width: 240px;
+  }
+}
+
