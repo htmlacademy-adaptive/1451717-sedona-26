@@ -1,3 +1,5 @@
+@use "variables.scss";
+
 .field__input {
   font-family: "PT Sans", sans-serif;
   font-style: normal;
@@ -9,4 +11,12 @@
 
 .field__input--transparent {
   color: #0000004d;
+}
+
+@media (min-width: variables.$tablet-width) {
+  .field {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
 }

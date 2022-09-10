@@ -1,8 +1,27 @@
+@use "variables.scss";
+
 .emotions__description {
+  display: block;
   font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
   color: rgba(0, 0, 0, 0.3);
 }
+
+@media (min-width: variables.$tablet-width) {
+  .emotions__description {
+    width: 648px;
+  }
+}
+
+@media (min-width: variables.$desktop-width) {
+  .emotions__description {
+    width: 768px;
+  }
+}
+

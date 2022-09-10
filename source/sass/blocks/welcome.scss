@@ -1,8 +1,22 @@
 .welcome {
+  display: flex;
+  justify-content: center;
   min-height: 389px;
+  margin-bottom: 32px;
   background-image: url("../../img/welcome-background.jpg");
   background-size: 320px 389px;
   background-repeat: no-repeat;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   color: #333333;
+}
+
+.welcome--other-pages {
+  min-height: 214px;
+  margin-bottom: 36px;
+  background-image: url("../../img/welcome-background-other.jpg");
+}
+
+.welcome__logo {
+  display: block;
+  margin: auto;
 }

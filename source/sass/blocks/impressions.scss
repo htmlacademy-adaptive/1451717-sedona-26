@@ -1,3 +1,5 @@
+@use "variables.scss";
+
 .impressions__label {
   font-weight: 700;
   font-size: 18px;
@@ -9,4 +11,16 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
+}
+
+.impressions__item {
+  width: 280px;
+  height: 46px;
+}
+
+@media (min-width: variables.$tablet-width) {
+  .impressions__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
