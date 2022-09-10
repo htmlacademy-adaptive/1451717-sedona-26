@@ -1,22 +1,45 @@
+@use "variables.scss";
+
 .welcome {
   display: flex;
   justify-content: center;
+  align-items: center;
   min-height: 389px;
   margin-bottom: 32px;
-  background-image: url("../../img/welcome-background.jpg");
+  background-image: url("../img/welcome-background.jpg");
   background-size: 320px 389px;
   background-repeat: no-repeat;
   background-color: #ffffff;
   color: #333333;
+  text-align: center;
 }
 
 .welcome--other-pages {
   min-height: 214px;
   margin-bottom: 36px;
-  background-image: url("../../img/welcome-background-other.jpg");
+  background-image: url("../img/welcome-background-other.jpg");
+  background-size: cover;
 }
 
-.welcome__logo {
-  display: block;
-  margin: auto;
+@media (min-width: variables.$tablet-width) {
+  .welcome {
+    min-height: 518px;
+    background-image: url("../img/welcome-background-tablet.jpg");
+    background-size: cover;
+  }
+
+  .welcome--other-pages {
+    min-height: 290px;
+    background-image: url("../img/welcome-background-other-tablet.jpg");
+  }
+}
+
+@media (min-width: variables.$desktop-width) {
+  .welcome {
+    background-image: url("../img/welcome-background-desktop.jpg");
+  }
+
+  .welcome--other-pages {
+    background-image: url("../img/welcome-background-other-desktop.jpg");
+  }
 }
