@@ -1,3 +1,59 @@
+@use "variables.scss";
+
 .production__wrapper {
+  width: 280px;
+  margin: 0 auto;
   background-color: #ffffff;
 }
+
+.production__title {
+  margin: 0;
+}
+
+.production__text {
+  margin: 0;
+  text-align: center;
+}
+
+.production__image {
+  display: block;
+  width: 280px;
+  height: 177px;
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+@media (min-width: variables.$tablet-width) {
+  .production__wrapper {
+    width: 648px;
+    margin-bottom: 40px;
+  }
+
+  .production__title {
+    font-size: 30px;
+    line-height: 26px;
+    margin-bottom: 27px;
+  }
+
+  .production__text {
+    margin: 0;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .production__image {
+    width: 648px;
+    height: 500px;
+  }
+}
+
+@media (min-width: variables.$desktop-width) {
+  .production__wrapper {
+    width: 800px;
+    margin-bottom: 120px;
+  }
+
+  .production__image {
+    width: 800px;
+  }
+}
+

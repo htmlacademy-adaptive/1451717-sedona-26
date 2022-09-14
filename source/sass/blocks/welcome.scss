@@ -24,6 +24,7 @@
 @media (min-width: variables.$tablet-width) {
   .welcome {
     min-height: 518px;
+    margin-bottom: 47px;
     background-image: url("../img/welcome-background-tablet.jpg");
     background-size: cover;
   }
@@ -36,10 +37,15 @@
 
 @media (min-width: variables.$desktop-width) {
   .welcome {
+    margin-bottom: 115px;
     background-image: url("../img/welcome-background-desktop.jpg");
   }
 
   .welcome--other-pages {
     background-image: url("../img/welcome-background-other-desktop.jpg");
+  }
+
+  .welcome--catalog {
+    margin-bottom: 100px;
   }
 }

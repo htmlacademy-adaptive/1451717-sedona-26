@@ -1,5 +1,11 @@
 @use "variables.scss";
 
+.contact {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  flex-direction: column;
+}
+
 @media (min-width: variables.$tablet-width) {
   .contact {
     display: flex;
