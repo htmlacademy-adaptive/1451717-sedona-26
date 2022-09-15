@@ -21,6 +21,7 @@
 }
 
 .feedback__item--introduce {
+  position: relative;
   padding-bottom: 39px;
   border-bottom: 1px solid #e6e6e6;
 }
@@ -57,6 +58,16 @@
     margin-bottom: 48px;
   }
 
+  .feedback__item--introduce::before {
+    content: "";
+    position: absolute;
+    top: -54px;
+    right: -43px;
+    height: 338px;
+    width: 1px;
+    background-color: #e5e5e5;
+  }
+
   .feedback__item--visited {
     margin-bottom: 26px;
   }
@@ -73,6 +84,13 @@
 
   .feedback__item {
     margin-bottom: 56px;
+  }
+
+  .feedback__item--introduce::before {
+    top: -54px;
+    right: -63px;
+    height: 338px;
+    width: 1px;
   }
 
   .feedback__item--emotions {

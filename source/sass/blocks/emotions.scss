@@ -26,11 +26,39 @@
     width: 648px;
     margin-bottom: 0;
   }
+
+  .emotions__title::before {
+    content: "";
+    position: absolute;
+    top: 13px;
+    left: 0;
+    height: 1px;
+    width: 123px;
+    background-color: #e5e5e5;
+  }
+
+  .emotions__title::after {
+    content: "";
+    position: absolute;
+    top: 13px;
+    right: 0;
+    height: 1px;
+    width: 123px;
+    background-color: #e5e5e5;
+  }
 }
 
 @media (min-width: variables.$desktop-width) {
   .emotions__description {
     width: 768px;
+  }
+
+  .emotions__title::before {
+    width: 280px;
+  }
+
+  .emotions__title::after {
+    width: 280px;
   }
 }
 

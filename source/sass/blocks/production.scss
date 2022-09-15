@@ -8,10 +8,12 @@
 
 .production__title {
   margin: 0;
+  margin-bottom: 30px;
 }
 
 .production__text {
   margin: 0;
+  margin-bottom: 36px;
   text-align: center;
 }
 
@@ -35,8 +37,11 @@
   }
 
   .production__text {
+    width: 435px;
     margin: 0;
-    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 80px;
     text-align: center;
   }
 

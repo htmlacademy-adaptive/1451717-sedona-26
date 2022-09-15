@@ -77,6 +77,26 @@
     flex-wrap: wrap;
     align-items: center;
   }
+
+  .impressions__tittle::before {
+    content: "";
+    position: absolute;
+    top: 13px;
+    left: 0;
+    height: 1px;
+    width: 123px;
+    background-color: #e5e5e5;
+  }
+
+  .impressions__tittle::after {
+    content: "";
+    position: absolute;
+    top: 13px;
+    right: 0;
+    height: 1px;
+    width: 123px;
+    background-color: #e5e5e5;
+  }
 }
 
 @media (min-width: variables.$desktop-width) {
@@ -93,4 +113,13 @@
   .impressions__item:last-child {
     width: 238px;
   }
+
+  .impressions__tittle::before {
+    width: 280px;
+  }
+
+  .impressions__tittle::after {
+    width: 280px;
+  }
 }
+

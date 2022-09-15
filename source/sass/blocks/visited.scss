@@ -78,6 +78,26 @@
     align-items: center;
     width: 224px;
   }
+
+  .visited__title::before {
+    content: "";
+    position: absolute;
+    top: 13px;
+    left: 0;
+    height: 1px;
+    width: 123px;
+    background-color: #e5e5e5;
+  }
+
+  .visited__title::after {
+    content: "";
+    position: absolute;
+    top: 13px;
+    right: 0;
+    height: 1px;
+    width: 123px;
+    background-color: #e5e5e5;
+  }
 }
 
 @media (min-width: variables.$desktop-width) {
@@ -90,4 +110,13 @@
   .visited__item {
     width: 184px;
   }
+
+  .visited__title::before {
+    width: 280px;
+  }
+
+  .visited__title::after {
+    width: 280px;
+  }
 }
+
