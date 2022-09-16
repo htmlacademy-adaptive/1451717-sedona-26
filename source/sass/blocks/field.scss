@@ -1,22 +1,72 @@
 @use "variables.scss";
 
+.field {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+
+.field:last-child {
+  margin-bottom: 0;
+}
+
+.field__name {
+  margin-left: 16px;
+}
+
 .field__input {
+  position: relative;
   font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
+  padding: 16px;
+  border: none;
+  background-color: #f2f2f2;
   color: #000000;
+  outline: none;
+  outline-offset: 0;
+  box-sizing: border-box;
+
+  &:hover {
+    background-color: #e5e5e5;
+    color: #000000;
+  }
+
+  &:active {
+    background-color: #ffffff;
+    outline: 4px solid #f2f2f2;
+  }
 }
 
 .field__input--transparent {
   color: #0000004d;
 }
 
+.field__icon {
+  position: absolute;
+  top: 25px;
+  right: 0;
+  width: 58px;
+  height: 58px;
+  background-color: #e6e6e6;
+}
+
 @media (min-width: variables.$tablet-width) {
   .field {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+    width: 280px;
+  }
+}
+
+@media (min-width: variables.$desktop-width) {
+  .field {
+    width: 430px;
+  }
+
+  .field--contact-desktop {
+    width: 403px;
   }
 }

@@ -4,10 +4,27 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
+  text-align: center;
+}
+
+.heading--form {
+  padding: 0;
+  padding-top: 24px;
+  margin-bottom: 20px;
 }
 
 @media (min-width: variables.$tablet-width) {
   .heading {
     text-align: center;
+    padding: 0;
+  }
+
+  .heading--form {
+    position: relative;
+    font-size: 21px;
+    line-height: 26px;
+    padding: 0;
+    margin-bottom: 28px;
+    width: 100%;
   }
 }
