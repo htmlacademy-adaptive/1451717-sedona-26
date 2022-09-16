@@ -12,13 +12,21 @@
   background-color: #ffffff;
   color: #333333;
   text-align: center;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/welcome-background@2x.jpg");
+  }
 }
 
 .welcome--other-pages {
-  min-height: 214px;
+  min-height: 158px;
   margin-bottom: 36px;
   background-image: url("../img/welcome-background-other.jpg");
   background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/welcome-background-other@2x.jpg");
+  }
 }
 
 @media (min-width: variables.$tablet-width) {
@@ -27,11 +35,29 @@
     margin-bottom: 47px;
     background-image: url("../img/welcome-background-tablet.jpg");
     background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/welcome-background-tablet@2x.jpg");
+    }
   }
 
   .welcome--other-pages {
     min-height: 290px;
     background-image: url("../img/welcome-background-other-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/welcome-background-other-tablet@2x.jpg");
+    }
+  }
+
+  .welcome__logo {
+    width: 461px;
+    height: 350px;
+  }
+
+  .welcome__logo--other-pages {
+    width: 457px;
+    height: 78px;
   }
 }
 
@@ -39,10 +65,27 @@
   .welcome {
     margin-bottom: 115px;
     background-image: url("../img/welcome-background-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/welcome-background-desktop@2x.jpg");
+    }
   }
 
   .welcome--other-pages {
     background-image: url("../img/welcome-background-other-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/welcome-background-other-desktop@2x.jpg");
+    }
+  }
+
+  .welcome__logo {
+    width: 460px;
+  }
+
+  .welcome__logo--other-pages {
+    width: 460px;
+    height: 80px;
   }
 
   .welcome--catalog {
