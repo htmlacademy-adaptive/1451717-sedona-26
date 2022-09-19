@@ -24,24 +24,24 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--first">
-              <a class="site-list__link site-list__link--active" href="index.html">
+              <a class="site-list__link site-list__link--mobile site-list__link--active" href="index.html">
                 Главная
               </a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link" href="catalog.html">
+              <a class="site-list__link site-list__link--mobile" href="catalog.html">
                 Фото и видео
               </a>
             </li>
           </ul>
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
-              <a class="site-list__link" href="form.html">
+              <a class="site-list__link site-list__link--mobile" href="form.html">
                 Форма отзыва
               </a>
             </li>
             <li class="site-list__item site-list__item--last">
-              <a class="site-list__link" href="https://htmlacademy.ru">
+              <a class="site-list__link site-list__link--mobile" href="https://htmlacademy.ru">
                 HTML Academy
               </a>
             </li>
@@ -57,6 +57,20 @@
         <h1 class="visually-hidden">Городок Седона</h1>
         <img class="welcome__logo"
           src="img/welcome.svg" width="282" height="214" alt="Добро пожаловать в Седону.">
+        <picture>
+          <source
+            media="(min-width: 1200px)"
+            srcset="img/triangle-desktop.png 1x, img/triangle-desktop@2x.png 2x">
+          <source
+            media="(min-width: 768px)"
+            srcset="img/triangle-tablet.png 1x, img/triangle-tablet@2x.png 2x">
+          <img class="welcome__triangle"
+            src="img/triangle-mobile.png"
+            srcset="img/triangle-mobile@2x.png 2x"
+            width="320px"
+            height="57px"
+            alt="Декоративный элемент.">
+        </picture>
       </section>
 
       <section class="description">
@@ -96,17 +110,23 @@
         <div class="advantages__wrapper">
           <ul class="advantages__list">
             <li class="advantages__item">
-              <img class="advantages__icon advantages__icon--tablet" src="#" alt="Дом.">
+              <svg class="advantages__icon advantages__icon--tablet"  width="40" height="40" aria-label="Раздел жильё." focusable="false">
+                <use href="img/sprite.svg#icon-house"></use>
+              </svg>
               <h3 class="advantages__title advantages__title--list heading">Жилье</h3>
               <p class="advantages__description advantages__description--list">Рекомендуем пожить в настоящем<br> мотеле, всё как в кино!</p>
             </li>
             <li class="advantages__item">
-              <img class="advantages__icon advantages__icon--tablet" src="#" alt="Бургер.">
+              <svg class="advantages__icon advantages__icon--tablet" width="40" height="40" aria-label="Раздел еда." focusable="false">
+                <use href="img/sprite.svg#icon-burger"></use>
+              </svg>
               <h3 class="advantages__title advantages__title--list heading">Еда</h3>
               <p class="advantages__description advantages__description--list advantages__description--tablet">Всегда заказывайте фирменный бургер,<br> вы не разочаруетесь!</p>
             </li>
             <li class="advantages__item">
-              <img class="advantages__icon advantages__icon--tablet" src="#" alt="Подарок.">
+              <svg class="advantages__icon advantages__icon--tablet" width="40" height="40" aria-label="Раздел сувениры." focusable="false">
+                <use href="img/sprite.svg#icon-gift"></use>
+              </svg>
               <h3 class="advantages__title advantages__title--list heading">Сувениры</h3>
               <p class="advantages__description advantages__description--list">Не только китайского,<br> но и местного производства!</p>
             </li>
@@ -187,33 +207,38 @@
           <ul class="social__list">
             <li class="social__item">
               <a class="social__link" href="https://vk.com/htmlacademy">
-                <svg class="social__icon" aria-hidden="true" focusable="false">
+                <span class="visually-hidden">Сайт ВКонтакте</span>
+                <svg class="social__icon" width="24" height="24">
+                  <use href="img/sprite.svg#icon-vk"></use>
                 </svg>
-                <span class="visually-hidden">ВКонтакте</span>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link" href="https://t.me/htmlacademy">
-                <svg class="social__icon" aria-hidden="true" focusable="false">
+                <span class="visually-hidden">Сайт Телеграм</span>
+                <svg class="social__icon" width="24" height="24">
+                  <use href="img/sprite.svg#icon-telegram"></use>
                 </svg>
-                <span class="visually-hidden">Телеграм</span>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link" href="https://www.youtube.com/user/htmlacademyru">
-                <svg class="social__icon" aria-hidden="true" focusable="false">
+                <span class="visually-hidden">Сайт Ютьюб</span>
+                <svg class="social__icon" width="24" height="24">
+                  <use href="img/sprite.svg#icon-youtube"></use>
                 </svg>
-                <span class="visually-hidden">Ютьюб</span>
               </a>
             </li>
           </ul>
         </div>
         <div class="main-footer__copyright copyright">
-          <p class="copyright__text">Разработанно</p>
+
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <svg class="copyright__icon" aria-hidden="true" focusable="false">
+            <span class="visually-hidden">Сайт HTML Academy</span>
+            <p class="copyright__text">Разработанно</p>
+            <svg class="copyright__icon" width="27" height="35" aria-hidden="true" focusable="false">
+              <use href="img/sprite.svg#icon-academy"></use>
             </svg>
-            <span class="visually-hidden">HTML Academy</span>
           </a>
         </div>
       </div>

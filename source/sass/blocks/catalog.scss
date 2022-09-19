@@ -66,16 +66,20 @@
 .catalog__wrapper-right {
   display: flex;
   flex-wrap: wrap;
+  align-items: flex-end;
 }
 
 .catalog__button {
-  display: block;
+  display: inline-block;
   width: 23px;
   height: 21px;
+  padding: 0;
   margin-right: 14px;
+  background-color: transparent;
   border: none;
   cursor: pointer;
 }
+
 
 .catalog__like-quantity {
   margin: 0;

@@ -6,7 +6,11 @@
 }
 
 .main-nav__logo-image {
-  display: block;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
   margin: 0 auto;
 }
 
@@ -36,7 +40,7 @@
   width: 23px;
   height: 22px;
   padding: 0;
-  background-color: #ffffff;
+  background-color: transparent;
   cursor: pointer;
   border: none;
 
@@ -63,7 +67,7 @@
 .main-nav--opened .main-nav__toggle {
   top: 17px;
   right: 20px;
-  background-color: #80b2d1;
+  background-color: transparent;
 
   &::before,
   &::after {
@@ -137,13 +141,6 @@
     display: none;
   }
 
-  .main-nav__logo-image {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
   .main-nav__wrapper {
     display: flex;
     width: 768px;
@@ -167,4 +164,3 @@
     width: 1200px;
   }
 }
-

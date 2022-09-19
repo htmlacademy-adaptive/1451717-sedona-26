@@ -46,13 +46,20 @@
   color: #0000004d;
 }
 
-.field__icon {
+.field__icon-wrapper {
   position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   top: 25px;
   right: 0;
   width: 58px;
   height: 58px;
   background-color: #e6e6e6;
+}
+
+.field__icon {
+  fill: #010101;
 }
 
 @media (min-width: variables.$tablet-width) {

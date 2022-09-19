@@ -21,9 +21,22 @@
 .site-list__link {
   color: #ffffff;
   text-decoration: none;
+}
+
+.site-list__link--mobile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 320px;
+  height: 55px;
+
+  &:hover {
+    background-color: #669ec0;
+  }
 
   &:active {
-    opacity: 0.3;
+    background-color: #5496bd;
+    color: rgb(255, 255, 255, 0.3);
   }
 }
 
@@ -56,6 +69,16 @@
 
   .site-list__link--active {
     color: #766357;
+  }
+
+  .site-list__link--mobile {
+    &:hover {
+      background-color: #ffffff;
+    }
+
+    &:active {
+      background-color: #ffffff;
+    }
   }
 }
 
