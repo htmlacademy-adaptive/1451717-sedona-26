@@ -14,6 +14,25 @@
 }
 
 .copyright__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #000000;
+
+  &:hover {
+    color: #81b3d2;
+    fill: #81b3d2;
+  }
+
+  &:active {
+    color: #b3b3b3;
+    fill: #b3b3b3;
+  }
+}
+
+.copyright__icon {
+  margin-left: 15px;
   width: 27px;
   height: 34px;
 }

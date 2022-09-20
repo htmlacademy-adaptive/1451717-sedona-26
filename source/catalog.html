@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page__body">
     <header class="main-header">
@@ -53,6 +53,20 @@
         <h1 class="visually-hidden">Городок Седона</h1>
         <img class="welcome__logo welcome__logo--other-pages"
           src="img/welcome-other.svg" width="229" height="39" alt="Добро пожаловать в Седону.">
+        <picture>
+          <source
+            media="(min-width: 1200px)"
+            srcset="img/triangle-desktop.png 1x, img/triangle-desktop@2x.png 2x">
+          <source
+            media="(min-width: 768px)"
+            srcset="img/triangle-tablet.png 1x, img/triangle-tablet@2x.png 2x">
+          <img class="welcome__triangle"
+            src="img/triangle-mobile.png"
+            srcset="img/triangle-mobile@2x.png 2x"
+            width="320px"
+            height="57px"
+            alt="Декоративный элемент.">
+        </picture>
       </section>
 
       <section class="description">
@@ -93,6 +107,9 @@
                 <div class="catalog__wrapper-right">
                   <button class="catalog__button" type="button">
                     <span class="visually-hidden">Нажать - нравится</span>
+                    <svg class="catalog-icon" width="23" height="21" aria-hidden="true" focusable="false">
+                      <use href="img/icon/sprite.svg#icon-like"></use>
+                    </svg>
                   </button>
                   <p class="catalog__like-quantity">1350</p>
                 </div>
@@ -121,6 +138,9 @@
                 <div class="catalog__wrapper-right">
                   <button class="catalog__button" type="button">
                     <span class="visually-hidden">Нажать - нравится</span>
+                    <svg class="catalog-icon" width="23" height="21" aria-hidden="true" focusable="false">
+                      <use href="img/icon/sprite.svg#icon-like"></use>
+                    </svg>
                   </button>
                   <p class="catalog__like-quantity">143</p>
                 </div>
@@ -149,6 +169,9 @@
               <div class="catalog__wrapper-right">
                   <button class="catalog__button" type="button">
                     <span class="visually-hidden">Нажать - нравится</span>
+                    <svg class="catalog-icon" width="23" height="21" aria-hidden="true" focusable="false">
+                      <use href="img/icon/sprite.svg#icon-like"></use>
+                    </svg>
                   </button>
                   <p class="catalog__like-quantity">96</p>
                 </div>
@@ -177,6 +200,9 @@
                 <div class="catalog__wrapper-right">
                   <button class="catalog__button" type="button">
                     <span class="visually-hidden">Нажать - нравится</span>
+                    <svg class="catalog-icon" width="23" height="21" aria-hidden="true" focusable="false">
+                      <use href="img/icon/sprite.svg#icon-like"></use>
+                    </svg>
                   </button>
                   <p class="catalog__like-quantity">254</p>
                 </div>
@@ -223,33 +249,38 @@
           <ul class="social__list">
             <li class="social__item">
               <a class="social__link" href="https://vk.com/htmlacademy">
-                <svg class="social__icon" aria-hidden="true" focusable="false">
+                <span class="visually-hidden">Сайт ВКонтакте</span>
+                <svg class="social__icon" width="24" height="24">
+                  <use href="img/icon/sprite.svg#icon-vk"></use>
                 </svg>
-                <span class="visually-hidden">ВКонтакте</span>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link" href="https://t.me/htmlacademy">
-                <svg class="social__icon" aria-hidden="true" focusable="false">
+                <span class="visually-hidden">Сайт Телеграм</span>
+                <svg class="social__icon" width="24" height="24">
+                  <use href="img/icon/sprite.svg#icon-telegram"></use>
                 </svg>
-                <span class="visually-hidden">Телеграм</span>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link" href="https://www.youtube.com/user/htmlacademyru">
-                <svg class="social__icon" aria-hidden="true" focusable="false">
+                <span class="visually-hidden">Сайт Ютьюб</span>
+                <svg class="social__icon" width="24" height="24">
+                  <use href="img/icon/sprite.svg#icon-youtube"></use>
                 </svg>
-                <span class="visually-hidden">Ютьюб</span>
               </a>
             </li>
           </ul>
         </div>
         <div class="main-footer__copyright copyright">
-          <b class="copyright__text">Разработанно</b>
+
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <svg class="copyright__icon" aria-hidden="true" focusable="false">
+            <span class="visually-hidden">Сайт HTML Academy</span>
+            <p class="copyright__text">Разработано</p>
+            <svg class="copyright__icon" width="27" height="35" aria-hidden="true" focusable="false">
+              <use href="img/icon/sprite.svg#icon-academy"></use>
             </svg>
-            <span class="visually-hidden">HTML Academy</span>
           </a>
         </div>
       </div>

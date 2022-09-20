@@ -1,6 +1,7 @@
 @use "variables.scss";
 
 .welcome {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -27,6 +28,18 @@
   @media (min-resolution: 2dppx) {
     background-image: url("../img/welcome-background-other@2x.jpg");
   }
+}
+
+.welcome__logo--other-pages {
+  padding-bottom: 15px;
+}
+
+.welcome__triangle {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }
 
 @media (min-width: variables.$tablet-width) {
