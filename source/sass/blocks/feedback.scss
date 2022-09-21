@@ -11,6 +11,7 @@
   max-width: 280px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 22px;
 }
 
 .feedback__item {
@@ -27,6 +28,7 @@
 }
 
 .feedback__item--contact {
+  width: 320px;
   padding-bottom: 34px;
   border-bottom: 1px solid #e6e6e6;
 }
@@ -44,12 +46,14 @@
 @media (min-width: variables.$tablet-width) {
   .feedback__form {
     max-width: 648px;
+    margin-bottom: 0;
   }
 
   .feedback__wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-bottom: 13px;
   }
 
   .feedback__item {
@@ -93,7 +97,15 @@
     width: 1px;
   }
 
+  .feedback__item--impressions {
+    margin-bottom: 75px;
+  }
+
   .feedback__item--emotions {
     margin-bottom: 48px;
+  }
+
+  .feedback__item--visited {
+    margin-bottom: 70px;
   }
 }

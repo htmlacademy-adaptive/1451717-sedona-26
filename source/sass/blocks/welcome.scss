@@ -57,6 +57,12 @@
     }
   }
 
+  .welcome__logo {
+    padding-bottom: 10px;
+    width: 461px;
+    height: 350px;
+  }
+
   .welcome--other-pages {
     min-height: 290px;
     margin-bottom: 66px;
@@ -68,14 +74,10 @@
     }
   }
 
-  .welcome__logo {
-    width: 461px;
-    height: 350px;
-  }
-
   .welcome__logo--other-pages {
     width: 457px;
     height: 78px;
+    padding-bottom: 15px;
   }
 
   .welcome__line {
@@ -85,7 +87,7 @@
 
 @media (min-width: variables.$desktop-width) {
   .welcome {
-    margin-bottom: 115px;
+    margin-bottom: 60px;
     background-image: url("../img/welcome-background-desktop.jpg");
 
     @media (min-resolution: 2dppx) {
@@ -117,5 +119,9 @@
 
   .welcome__line {
     background-image: url("../img/triangle-desktop.svg");
+  }
+
+  .welcome--form {
+    margin-bottom: 115px;
   }
 }

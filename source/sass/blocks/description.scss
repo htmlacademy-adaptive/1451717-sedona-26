@@ -10,6 +10,7 @@
 }
 
 .description__slogan {
+  width: 270px;
   margin: 0;
   margin-bottom: 35px;
 }
@@ -20,7 +21,7 @@
 
 .description__wrapper--form {
   margin-bottom: 0;
-  padding-bottom: 28px;
+  padding-bottom: 15px;
   border-bottom: 1px solid #e6e6e6;
 }
 
@@ -44,8 +45,11 @@
   }
 
   .description__slogan {
+    width: 440px;
     font-size: 21px;
     line-height: 26px;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 29px;
   }
 
@@ -67,6 +71,10 @@
     margin-bottom: 30px;
   }
 
+  .description__title--form {
+    margin-bottom: 20px;
+  }
+
   .description__text {
     font-size: 14px;
     line-height: 24px;
@@ -79,7 +87,15 @@
     margin-bottom: 90px;
   }
 
+  .description__wrapper--form {
+    margin-bottom: 63px;
+  }
+
   .description__title {
     margin-bottom: 30px;
+  }
+
+  .description__wrapper--index {
+    margin-bottom: 43px;
   }
 }

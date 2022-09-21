@@ -78,6 +78,10 @@
     align-items: center;
   }
 
+  .impressions__tittle {
+    margin-bottom: 28px;
+  }
+
   .impressions__tittle::before {
     content: "";
     position: absolute;
@@ -112,6 +116,10 @@
 
   .impressions__item:last-child {
     width: 238px;
+  }
+
+  .impressions__tittle {
+    margin-bottom: 45px;
   }
 
   .impressions__tittle::before {
