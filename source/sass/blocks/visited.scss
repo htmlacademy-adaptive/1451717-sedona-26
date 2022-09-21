@@ -31,6 +31,10 @@
   padding-left: 62px;
 }
 
+.visited__title {
+  margin-bottom: 20px;
+}
+
 .visited__mark {
   position: absolute;
   top: -9px;
@@ -79,10 +83,14 @@
     width: 224px;
   }
 
+  .visited__title {
+    margin-bottom: 30px;
+  }
+
   .visited__title::before {
     content: "";
     position: absolute;
-    top: 13px;
+    top: 25px;
     left: 0;
     height: 1px;
     width: 123px;
@@ -92,7 +100,7 @@
   .visited__title::after {
     content: "";
     position: absolute;
-    top: 13px;
+    top: 25px;
     right: 0;
     height: 1px;
     width: 123px;
@@ -102,9 +110,14 @@
 
 @media (min-width: variables.$desktop-width) {
   .visited__list {
-    justify-content: center;
-    gap: 64px;
+    justify-content: flex-start;
     max-width: 960px;
+    margin-left: 44px;
+    gap: 50px;
+  }
+
+  .visited__title {
+    margin-bottom: 57px;
   }
 
   .visited__item {

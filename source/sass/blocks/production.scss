@@ -1,6 +1,7 @@
 @use "variables.scss";
 
 .production__wrapper {
+  position: relative;
   width: 280px;
   margin: 0 auto;
   background-color: #ffffff;
@@ -17,11 +18,26 @@
   text-align: center;
 }
 
+.production__wrapper-video {
+  position: relative;
+}
+
 .production__image {
   display: block;
   width: 280px;
   height: 177px;
   filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.production__icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 48px;
+  height: 54px;
+  background-image: url("../img/playvideo.svg");
+  background-repeat: no-repeat;
 }
 
 @media (min-width: variables.$tablet-width) {
@@ -33,15 +49,15 @@
   .production__title {
     font-size: 30px;
     line-height: 26px;
-    margin-bottom: 27px;
+    margin-bottom: 31px;
   }
 
   .production__text {
-    width: 435px;
+    width: 450px;
     margin: 0;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 80px;
+    margin-bottom: 88px;
     text-align: center;
   }
 
@@ -54,7 +70,7 @@
 @media (min-width: variables.$desktop-width) {
   .production__wrapper {
     width: 800px;
-    margin-bottom: 120px;
+    margin-bottom: 84px;
   }
 
   .production__image {

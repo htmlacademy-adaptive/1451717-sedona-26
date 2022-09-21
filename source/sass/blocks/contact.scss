@@ -12,4 +12,28 @@
     flex-wrap: wrap;
     flex-direction: column;
   }
+
+  .contact__title {
+    margin-left: 20px;
+  }
+
+  .contact__title-right {
+    margin-left: 0;
+    margin-right: auto;
+  }
+
+  .contact__item {
+    margin-left: auto;
+  }
+}
+
+@media (min-width: variables.$desktop-width) {
+  .contact__title {
+    margin-left: 30px;
+  }
+
+  .contact__title-right {
+    width: 465px;
+    margin-left: 0;
+  }
 }

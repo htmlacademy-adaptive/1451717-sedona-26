@@ -23,6 +23,7 @@
   min-height: 158px;
   margin-bottom: 36px;
   background-image: url("../img/welcome-background-other.jpg");
+  background-position: bottom;
   background-size: cover;
 
   @media (min-resolution: 2dppx) {
@@ -34,12 +35,14 @@
   padding-bottom: 15px;
 }
 
-.welcome__triangle {
-  content: "";
+.welcome__line {
   position: absolute;
-  bottom: 0;
   left: 0;
+  bottom: -1px;
   width: 100%;
+  height: 57px;
+  background-image: url("../img/triangle-mobile.svg");
+  background-repeat: no-repeat;
 }
 
 @media (min-width: variables.$tablet-width) {
@@ -54,29 +57,37 @@
     }
   }
 
+  .welcome__logo {
+    padding-bottom: 10px;
+    width: 461px;
+    height: 350px;
+  }
+
   .welcome--other-pages {
     min-height: 290px;
+    margin-bottom: 66px;
     background-image: url("../img/welcome-background-other-tablet.jpg");
+    background-size: cover;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/welcome-background-other-tablet@2x.jpg");
     }
   }
 
-  .welcome__logo {
-    width: 461px;
-    height: 350px;
-  }
-
   .welcome__logo--other-pages {
     width: 457px;
     height: 78px;
+    padding-bottom: 15px;
+  }
+
+  .welcome__line {
+    background-image: url("../img/triangle-tablet.svg");
   }
 }
 
 @media (min-width: variables.$desktop-width) {
   .welcome {
-    margin-bottom: 115px;
+    margin-bottom: 60px;
     background-image: url("../img/welcome-background-desktop.jpg");
 
     @media (min-resolution: 2dppx) {
@@ -85,6 +96,7 @@
   }
 
   .welcome--other-pages {
+    min-height: 300px;
     background-image: url("../img/welcome-background-other-desktop.jpg");
 
     @media (min-resolution: 2dppx) {
@@ -103,5 +115,13 @@
 
   .welcome--catalog {
     margin-bottom: 100px;
+  }
+
+  .welcome__line {
+    background-image: url("../img/triangle-desktop.svg");
+  }
+
+  .welcome--form {
+    margin-bottom: 115px;
   }
 }

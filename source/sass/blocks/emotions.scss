@@ -2,6 +2,7 @@
 
 .emotions__title {
   margin-top: 0;
+  margin-bottom: 20px;
 }
 
 .emotions__description {
@@ -15,6 +16,7 @@
   margin-bottom: 56px;
   padding: 16px;
   width: 100%;
+  height: 150px;
   color: rgba(0, 0, 0, 0.3);
   background-color: #f2f2f2;
   border: none;
@@ -24,7 +26,12 @@
 @media (min-width: variables.$tablet-width) {
   .emotions__description {
     width: 648px;
+    height: 160px;
     margin-bottom: 0;
+  }
+
+  .emotions__title {
+    margin-bottom: 30px;
   }
 
   .emotions__title::before {
