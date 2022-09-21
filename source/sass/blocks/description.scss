@@ -58,13 +58,13 @@
 
   .description__wrapper--catalog {
     width: 430px;
-    margin-bottom: 67px;
+    margin-bottom: 83px;
   }
 
   .description__title {
     font-size: 30px;
     line-height: 26px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
 
   .description__text {
@@ -76,10 +76,10 @@
 
 @media (min-width: variables.$desktop-width) {
   .description__wrapper {
-    margin-bottom: 66px;
+    margin-bottom: 90px;
   }
 
   .description__title {
-    margin-bottom: 27px;
+    margin-bottom: 30px;
   }
 }

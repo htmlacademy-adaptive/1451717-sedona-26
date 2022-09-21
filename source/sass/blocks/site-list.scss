@@ -21,9 +21,6 @@
 .site-list__link {
   color: #ffffff;
   text-decoration: none;
-}
-
-.site-list__link--mobile {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -55,28 +52,19 @@
   }
 
   .site-list__link {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
     color: #000000;
 
     &:hover {
       color: #81b3d2;
+      background-color: #ffffff;
     }
 
     &:active {
       color: #000000;
       opacity: 0.3;
-    }
-  }
-
-  .site-list__link--active {
-    color: #766357;
-  }
-
-  .site-list__link--mobile {
-    &:hover {
-      background-color: #ffffff;
-    }
-
-    &:active {
       background-color: #ffffff;
     }
   }
