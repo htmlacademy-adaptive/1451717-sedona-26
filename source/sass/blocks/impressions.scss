@@ -46,11 +46,11 @@
   background-color: #e5e5e5;
 }
 
-.impressions_field:active + .impressions__mark-point {
+.impressions__field:active + .impressions__mark-point {
   background-color: #d6d6d6;
 }
 
-.impressions_field[type="radio"]:checked + .impressions__mark-point::before {
+.impressions__field[type="radio"]:checked + .impressions__mark-point::before {
   content: "";
   display: block;
   position: absolute;

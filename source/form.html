@@ -94,20 +94,20 @@
               <label class="contact__item field field--contact-desktop">
                 <span class="field__name">Контактный телефон<sup>*</sup>:</span>
                 <input class="field__input field__input--transparent" type="tel" name="phone" placeholder="Введите телефон" pattern="" required>
-                <div class="field__icon-wrapper">
+                <span class="field__icon-wrapper">
                   <svg class="field__icon" width="18" height="18" aria-label="Укажите номер телефона." focusable="false">
                     <use href="img/icon/sprite.svg#icon-phone"></use>
                   </svg>
-                </div>
+                </span>
               </label>
               <label class="contact__item field field--contact-desktop">
                 <span class="field__name">Электронная почта<sup>*</sup>:</span>
                 <input class="field__input field__input--transparent" type="email" name="surname" placeholder="Введите e-mail" required>
-                <div class="field__icon-wrapper">
+                <span class="field__icon-wrapper">
                   <svg class="field__icon" width="18" height="18" aria-label="Укажите электронную почту." focusable="false">
                     <use href="img/icon/sprite.svg#icon-mail"></use>
                   </svg>
-                </div>
+                </span>
               </label>
             </fieldset>
           </div>
@@ -117,21 +117,21 @@
             <ul class="impressions__list">
               <li class="impressions__item">
                 <label class="impressions__item-wrapper">
-                  <input class="visually-hidden impressions_field" type="radio" name="impressions-group" checked>
+                  <input class="visually-hidden impressions__field" type="radio" name="impressions-group" checked>
                   <span class="impressions__mark-point"></span>
                   <span class="impressions__label">Скорее положительное</span>
                 </label>
               </li>
               <li class="impressions__item">
                 <label class="impressions__item-wrapper">
-                  <input class="visually-hidden impressions_field" type="radio" name="impressions-group">
+                  <input class="visually-hidden impressions__field" type="radio" name="impressions-group">
                   <span class="impressions__mark-point"></span>
                   <span class="impressions__label">Скорее отрицательное</span>
                 </label>
               </li>
               <li class="impressions__item">
                 <label class="impressions__item-wrapper">
-                  <input class="visually-hidden impressions_field" type="radio" name="impressions-group">
+                  <input class="visually-hidden impressions__field" type="radio" name="impressions-group">
                   <span class="impressions__mark-point"></span>
                   <span class="impressions__label">Затрудняюсь ответить</span>
                 </label>
@@ -142,29 +142,29 @@
           <fieldset class="feedback__item feedback__item--visited visited">
             <legend class="visited__title heading heading--form">Посещенные<br> достопримечательности:</legend>
             <ul class="visited__list">
-              <li class="visited__item">
+              <li class="visited__item visited__item--bridge">
                 <label class="visited__item-wrapper">
                   <input class="visually-hidden visited__field" type="checkbox" name="pool" checked>
                   <span class="visited__mark"></span>
                   <span class="visited__label">Мост Дьявола</span>
                 </label>
               </li>
-              <li class="visited__item">
-                <label class="visited__item-wrapper  visited__item--rock">
+              <li class="visited__item visited__item--rock">
+                <label class="visited__item-wrapper">
                   <input class="visually-hidden visited__field" type="checkbox" name="pool" checked>
                   <span class="visited__mark"></span>
                   <span class="visited__label">Гора-Колокол</span>
                 </label>
               </li>
-              <li class="visited__item">
-                <label class="visited__item-wrapper visited__item--slide">
+              <li class="visited__item visited__item--slide">
+                <label class="visited__item-wrapper">
                   <input class="visually-hidden visited__field" type="checkbox" name="pool" checked>
                   <span class="visited__mark"></span>
                   <span class="visited__label">Слайд-парк</span>
                 </label>
               </li>
-              <li class="visited__item">
-                <label class="visited__item-wrapper visited__item--red">
+              <li class="visited__item visited__item--red-rocks">
+                <label class="visited__item-wrapper">
                   <input class="visually-hidden visited__field" type="checkbox" name="pool">
                   <span class="visited__mark"></span>
                   <span class="visited__label">Красные скалы</span>
