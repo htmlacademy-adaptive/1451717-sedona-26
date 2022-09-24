@@ -22,6 +22,10 @@
   margin-bottom: 16px;
 }
 
+.impressions__tittle {
+  margin-bottom: 19px;
+}
+
 .impressions__item:last-child {
   margin-bottom: 0;
 }
@@ -46,11 +50,11 @@
   background-color: #e5e5e5;
 }
 
-.impressions_field:active + .impressions__mark-point {
+.impressions__field:active + .impressions__mark-point {
   background-color: #d6d6d6;
 }
 
-.impressions_field[type="radio"]:checked + .impressions__mark-point::before {
+.impressions__field[type="radio"]:checked + .impressions__mark-point::before {
   content: "";
   display: block;
   position: absolute;
@@ -60,6 +64,10 @@
   height: 16px;
   background-image: url("../img/point.svg");
   background-repeat: no-repeat;
+}
+
+.impressions__field[disabled] + .impressions__mark-point {
+  opacity: 0.4;
 }
 
 @media (min-width: variables.$tablet-width) {

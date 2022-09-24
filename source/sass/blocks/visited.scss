@@ -66,6 +66,10 @@
   background-repeat: no-repeat;
 }
 
+.visited__field[disabled] + .visited__mark {
+  opacity: 0.4;
+}
+
 @media (min-width: variables.$tablet-width) {
   .visited__list {
     display: flex;
@@ -110,10 +114,25 @@
 
 @media (min-width: variables.$desktop-width) {
   .visited__list {
-    justify-content: flex-start;
+    justify-content: center;
     max-width: 960px;
-    margin-left: 44px;
-    gap: 50px;
+    gap: 64px;
+  }
+
+  .visited__item--bridge {
+    max-width: 172px;
+  }
+
+  .visited__item--rock {
+    max-width: 170px;
+  }
+
+  .visited__item--slide {
+    max-width: 153px;
+  }
+
+  .visited__item--red-rocks {
+    min-width: 184px;
   }
 
   .visited__title {

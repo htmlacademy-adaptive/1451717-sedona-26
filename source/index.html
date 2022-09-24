@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
+    <link rel="preload" href="../fonts/ptsans.woff2" as="font">
+    <link rel="preload" href="../fonts/ptsansbold.woff2" as="font">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/apple-180x180.png">
@@ -13,7 +15,7 @@
   <body class="page__body">
     <header class="main-header">
 
-      <nav class="main-nav main-nav--closed">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
         <a class="main-nav__logo">
           <img class="main-nav__logo-image"
             src="img/logo.svg" width="185" height="96" alt="Логотип города Седона.">
@@ -63,10 +65,9 @@
       <section class="description">
         <div class="description__wrapper description__wrapper--index">
           <h2 class="visually-hidden">Описание Седоны</h2>
-          <p class="description__slogan heading">Седона — небольшой городок в Аризоне,
-            заслуживающий большего!</p>
+          <p class="description__slogan heading">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
           <p class="description__reasons">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
-       </div>
+        </div>
       </section>
 
       <section class="advantages">
@@ -79,20 +80,31 @@
             <p class="advantages__number">— №1 —</p>
             <p class="advantages__description">Седона не аттракцион для туристов, там течёт своя жизнь</p>
           </div>
-          <picture>
-            <source
-              media="(min-width: 1200px)"
-              srcset="img/city-desktop.jpg 1x, img/city-desktop@2x.jpg 2x">
-            <source
-              media="(min-width: 768px)"
-              srcset="img/city-tablet.jpg 1x, img/city-tablet@2x.jpg 2x">
-            <img class="advantages__photo"
-              src="img/city-mobile.jpg"
-              srcset="img/city-mobile@2x.jpg 2x"
-              width="320px"
-              height="260px"
-              alt="Летняя Седона.">
-          </picture>
+          <a href="img/city-desktop.jpg">
+            <picture>
+              <source type="image/webp"
+                media="(min-width: 1200px)"
+                srcset="img/city-desktop.webp 1x, img/city-desktop@2x.webp 2x">
+              <source type="image/webp"
+                media="(min-width: 768px)"
+                srcset="img/city-tablet.webp 1x, img/city-tablet@2x.webp 2x">
+              <source type="image/webp"
+                srcset="img/city-mobile.webp, img/city-mobile@2x.webp 2x">
+
+              <source
+                media="(min-width: 1200px)"
+                srcset="img/city-desktop.jpg 1x, img/city-desktop@2x.jpg 2x">
+              <source
+                media="(min-width: 768px)"
+                srcset="img/city-tablet.jpg 1x, img/city-tablet@2x.jpg 2x">
+              <img class="advantages__photo"
+                src="img/city-mobile.jpg"
+                srcset="img/city-mobile@2x.jpg 2x"
+                width="320"
+                height="260"
+                alt="Летняя Седона.">
+            </picture>
+          </a>
         </div>
 
         <div class="advantages__wrapper">
@@ -127,20 +139,31 @@
             <p class="advantages__number">— №2 —</p>
             <p class="advantages__description advantages__description-mobile">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
           </div>
-          <picture>
-            <source
-              media="(min-width: 1200px)"
-              srcset="img/bridge-desktop.jpg 1x, img/bridge-desktop@2x.jpg 2x">
-            <source
-              media="(min-width: 768px)"
-              srcset="img/bridge-tablet.jpg 1x, img/bridge-tablet@2x.jpg 2x">
-            <img class="advantages__photo"
-              src="img/bridge-mobile.jpg"
-              srcset="img/bridge-mobile@2x.jpg 2x"
-              width="320px"
-              height="260px"
-              alt="Мост дьявола.">
-          </picture>
+          <a href="img/bridge-desktop.jpg">
+            <picture>
+              <source type="image/webp"
+                media="(min-width: 1200px)"
+                srcset="img/bridge-desktop.webp 1x, img/bridge-desktop@2x.webp 2x">
+              <source type="image/webp"
+                media="(min-width: 768px)"
+                srcset="img/bridge-tablet.webp 1x, img/bridge-tablet@2x.webp 2x">
+              <source type="image/webp"
+                srcset="img/bridge-mobile.webp, img/bridge-mobile@2x.jpg 2x">
+
+              <source
+                media="(min-width: 1200px)"
+                srcset="img/bridge-desktop.jpg 1x, img/bridge-desktop@2x.jpg 2x">
+              <source
+                media="(min-width: 768px)"
+                srcset="img/bridge-tablet.jpg 1x, img/bridge-tablet@2x.jpg 2x">
+              <img class="advantages__photo"
+                src="img/bridge-mobile.jpg"
+                srcset="img/bridge-mobile@2x.jpg 2x"
+                width="320"
+                height="260"
+                alt="Мост дьявола.">
+            </picture>
+          </a>
         </div>
 
         <div class="advantages__wrapper  advantages__wrapper--long">
@@ -169,7 +192,7 @@
           <h2 class="search-form__title">Заинтересовались?</h2>
           <p class="search-form__description"><span>Укажите предполагаемые даты поездки,</span><br> <span>и мы покажем вам лучшие предложения
             гостиниц в Седоне</span></p>
-          <button class="search-form__button button" type="button">Найти гостиницу</button>
+          <a class="search-form__button button" href="#">Найти гостиницу</a>
         </div>
       </section>
 
@@ -232,6 +255,6 @@
       </div>
 
     </footer>
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>

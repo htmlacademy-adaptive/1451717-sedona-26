@@ -3,6 +3,7 @@
 .send__name {
   font-size: 12px;
   margin: 0;
+  margin-top: 2px;
   text-align: right;
   color: rgba(51, 51, 51, 0.6);
 }
@@ -27,6 +28,7 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 21px;
+    margin: 0;
     color: #333333;
   }
 
@@ -38,6 +40,7 @@
   }
 
   .send-button {
+    padding-right: 60px;
     width: 324px;
   }
 }
@@ -51,6 +54,11 @@
   }
 
   .send-button {
+    padding: 18px 71px 14px 58px;
     width: 384px;
+  }
+
+  .send__name {
+    padding-top: 10px;
   }
 }
