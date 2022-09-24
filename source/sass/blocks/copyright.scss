@@ -36,3 +36,16 @@
   width: 27px;
   height: 34px;
 }
+
+@media (min-width: variables.$tablet-width) {
+  .copyright__text {
+    padding-left: 8px;
+    padding-bottom: 5px;
+  }
+}
+
+@media (min-width: variables.$desktop-width) {
+  .copyright__text {
+    padding: 0;
+  }
+}

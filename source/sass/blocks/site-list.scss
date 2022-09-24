@@ -37,12 +37,6 @@
   }
 }
 
-@media (max-width: variables.$mobile-width-only) {
-  .main-nav--closed .site-list__item {
-    display: none;
-  }
-}
-
 @media (min-width: variables.$tablet-width) {
   .site-list__item {
     width: 153px;

@@ -11,7 +11,7 @@
   max-width: 280px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 22px;
+  margin-bottom: 24px;
 }
 
 .feedback__item {
@@ -83,6 +83,10 @@
 @media (min-width: variables.$desktop-width) {
   .feedback__form {
     max-width: 960px;
+  }
+
+  .feedback__wrapper {
+    margin-bottom: 16px;
   }
 
   .feedback__item {

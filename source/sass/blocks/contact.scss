@@ -6,6 +6,10 @@
   flex-direction: column;
 }
 
+.contact__title-right {
+  margin-bottom: 15px;
+}
+
 @media (min-width: variables.$tablet-width) {
   .contact {
     display: flex;
@@ -20,6 +24,7 @@
   .contact__title-right {
     margin-left: 0;
     margin-right: 40px;
+    margin-bottom: 20px;
   }
 
   .contact__item {
@@ -36,5 +41,6 @@
     width: 465px;
     margin-left: 0;
     margin-right: 0;
+    margin-bottom: 23px;
   }
 }
