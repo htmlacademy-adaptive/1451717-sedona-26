@@ -66,6 +66,10 @@
   background-repeat: no-repeat;
 }
 
+.visited__field[disabled] + .visited__mark {
+  opacity: 0.4;
+}
+
 @media (min-width: variables.$tablet-width) {
   .visited__list {
     display: flex;

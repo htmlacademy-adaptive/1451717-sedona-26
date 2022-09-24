@@ -66,6 +66,10 @@
   background-repeat: no-repeat;
 }
 
+.impressions__field[disabled] + .impressions__mark-point {
+  opacity: 0.4;
+}
+
 @media (min-width: variables.$tablet-width) {
   .impressions__list {
     display: flex;
